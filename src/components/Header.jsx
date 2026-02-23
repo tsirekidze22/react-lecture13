@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className="flex gap-x-10 items-center">
-      <Link to="/" className="text-[25px] text-blue-400">
+      <Link to="/" className="text-[25px]">
         MyApp
       </Link>
 
@@ -14,15 +14,20 @@ const Header = () => {
               Home
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/contact" className="underline">
               Contact - Link
             </Link>
             <a href="/contact">Contact - a</a>
-          </li>
+          </li> */}
           <li>
             <Link to="/about" className="underline">
               About
+            </Link>
+          </li>
+          <li>
+            <Link to="/dashboard" className="underline">
+              Dashboard
             </Link>
           </li>
         </ul>
